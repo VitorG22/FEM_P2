@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
+
+
+:root{
+    --Gradient : linear-gradient(to right ,rgb(100, 72, 254), rgb(96, 5, 148));
+    --branco: rgb(255, 255, 255);
+    --Light_violet: rgb(222, 221, 223);
+    --Dark_violet: rgb(142, 133, 147);
+    --Very_dark_violet: rgb(33, 9, 47);
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size:1.2vw;
+}
+
+ul{
+    list-style: none;
+}
+
+
+@media (min-width: 431px) {
+    
+
+.desktop{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100vh;
+    grid-template-areas: 
+    "imagem main"
+    ;
+}
+
+
+            /*CARDS*/
+
+.imagem{
+    grid-area: imagem;
+
+    background-image: url(img/bg-main-desktop.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 0px 10px rgb(0, 0, 0);
+}
+
+.cards{
+    display:flex;
+    flex-direction:column;
+    gap: 2vw;
+}
+
+
+            /*CARD1*/
+
+
+
+.card1 ul{
+    text-transform: uppercase;
+    color:var(--Light_violet);
+    background-image: url(img/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 13.5vw;
+    width: 24.75vw;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    transform: translateX(15vw);
+    border-radius: .7vw;
+    text-shadow: 0px 1px 3px black;
+    box-shadow: 4px 4px 10px rgb(0, 0, 0);
+}
+
+.card1 .cardpic{
+    display:flex;
+    align-items: center;
+    gap:1vw
+}
+.cardpic .span1{
+    height: 3vw;
+    width: 3vw;
+    background:var(--branco);
+    border-radius:50%;
+}
+.cardpic .span2{
+    width: 2vw;
+    height: 2vw;
+    border:solid white 1px;
+    border-radius:50%;
+}
+
+.card1 .imgnum{
+    font-size:1.4vw;
+    font-weight: 500;
+}
+
+
+.card1 ul li{
+    margin:1vw;
+}
+
+.c1name{
+    display:flex;
+    justify-content: space-between;
+}
+
+            /*END CARD1*/
+
+            /*CAR2*/
+
+.card2{
+    background-image: url(img/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 13.5vw;
+    width: 24.75vw;
+
+    
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    transform: translateX(20vw);
+    border-radius: .7vw;
+    box-shadow: 4px 4px 10px rgb(0, 0, 0);
+}
+
+.card2 div{
+    margin-right: 3vw;
+    color:var(--Light_violet);
+    text-shadow: 0px 1px 3px black;
+}
+
+            /*END CARD2*/
+
+
+
+
+            /* END CARDS*/
+
+            /*INFOS*/
+.info{
+    grid-area: main;
+
+
+    display:flex;
+    
+    align-items: center;
+    justify-content:center;
+}
+
+.info section{
+    display:flex;
+    justify-content: center;
+
+    width:50vw;
+    
+
+}
+
+.info section ul{
+    display:flex;
+    flex-direction:column;
+    gap:2.5vh;
+}
+.info section ul li{
+
+    display:flex;
+    flex-direction:column;
+    gap:1vh
+}
+
+
+.boxDC{
+    display:flex;
+    flex-direction:row;
+    gap: 2vw;
+}
+
+.boxDC .date {
+    width:4vw
+}
+
+.buttons{
+    display:flex;
+    align-items: center;
+}
+
+button{
+    width: 100%;
+    background-color: var(--Very_dark_violet);
+    color:var(--Light_violet);
+    padding: 1.5vh 0vw;
+    border:none;
+    border-radius: .5rem;
+    letter-spacing: .1vw;
+}
+
+
+input{
+    border:solid 2px var(--Light_violet);
+    padding:1.2vh .5vw;
+}
+
+
+input:focus{
+    border-image-source:var(--Gradient) ;
+    border-width: 3px;
+    border-image-slice: 1;
+}
+.info{
+    grid-area: main;
+
+
+    display:flex;
+    
+    align-items: center;
+    justify-content:center;
+}
+
+.info section{
+    display:flex;
+    justify-content: center;
+
+    width:50vw;
+    
+
+}
+
+.info section ul{
+    display:flex;
+    flex-direction:column;
+    gap:2.5vh;
+}
+.info section ul li{
+
+    display:flex;
+    flex-direction:column;
+    gap:1vh
+}
+
+
+.boxDC{
+    display:flex;
+    flex-direction:row;
+    gap: 2vw;
+}
+
+.boxDC .date {
+    width:4vw
+}
+
+.buttons{
+    display:flex;
+    align-items: center;
+}
+button{
+    width: 100%;
+    background-color: var(--Very_dark_violet);
+    color:var(--Light_violet);
+    padding: 1.5vh 0vw;
+    border:none;
+    border-radius: .5rem;
+    letter-spacing: .1vw;
+}
+
+
+input{
+    border:solid 2px var(--Light_violet);
+    padding:1.2vh .5vw;
+}
+
+
+input:focus{
+    border-image-source:var(--Gradient) ;
+    border-width: 3px;
+    border-image-slice: 1;
+}
+
+
+.erro{
+    display:none;
+    color:red;
+    font-size: .8rem;
+}
+
+            /*END INFOS*/
+
+            /*CONFIRMED*/   
+
+.confirmed{
+    display:none;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmed section{
+    display:flex;
+    flex-direction:column;
+
+    align-items: center;
+}
+
+.confirmed svg {
+    display:flex;
+    width: 5vw;
+}
+
+.confirmed h1{
+    color:var(--Very_dark_violet);
+    font-size:1.6vw;
+    font-weight: 450;
+    letter-spacing: .2vw;
+    margin-top:1.5vw;
+}
+
+.confirmed p{
+    margin-top:.5vw;
+    color:var(--Dark_violet)
+}
+
+.confirmed button{
+    margin-top:1.5vw;
+    width:120%;
+}
+
+}
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="mobile.css">
+
+
+    <title>ICDF</title>
+</head>
+<body>
+    <div class="desktop">
+        <div class="imagem">
+            <div class="cards">
+                <div class="card1" >
+                
+                <ul>
+                    <li class="cardpic">
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                    </li>
+
+                    <li>
+                        <p class="imgnum" id="imgNum">0000 0000 0000 0000</p>
+                    </li>
+
+                    <li class="c1name">
+                        <p id="imgName">YOUR NAME</p>
+                        <p id="imgData">00/00</p>
+                    </li>
+                </ul>
+                </div>
+
+                <div class="card2"  >
+                    <div id="imgCVC">000</div>
+                </div>
+            </div>
+        </div>
+
+        <main class="info" id="info">
+            <section>
+                <ul>
+                    <li>
+                        <p>CARDHOLDER NAME</p>
+                        <input type="text" name="" id="cardName" placeholder="Ex. Your Name Here" >
+                        <p class="erro" id="erroCN">Preencha este campo</p>
+                    </li>
+
+                    <li>
+                        <p>CARD NUMBER</p>
+                        <input type="number" name="" id="cardNumber" placeholder="Ex. 1234 5678 9123 0000 "  >
+                        <p class="erro" id="erroCNum">erro</p>
+                    </li>
+
+                    <li>
+                        <div class="boxDC">
+                            <span>
+                                <P>EXP. DATE (MM/YY)</P>
+                                <div class="data">
+                                    <input class="date" type="number" name="" id="expDateM" placeholder="MM" min="0" max="12"> 
+                                    <input class="date" type="number" name="" id="expDateY" placeholder="YY" min="22" max="99"  > 
+                                </div>
+                                <p class="erro" id="erroData">erro</p>
+                            </span>
+    
+                            <span>
+                                <p>CVC</p>
+                                <input class="cvcvalue" type="number" name="" id="cvc" placeholder="Ex. 123">
+                                <p class="erro" id="erroCVC">erro</p>
+                            </span>
+                        </div>
+                    </li>
+
+                    <li class="buttons">
+                        <button onclick="start()">Confirm</button>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <main class="confirmed" id="confirmed">
+            <section>
+                <svg  viewbox="0 0 80 80" fill="none" ><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+                <h1>THANK YOU!</h1>
+                <p>We've added your card details</p>
+                <button>Continue</button>
+            </section>
+        </main>
+    </div>
+</body>
+
+    <script src="script.js"></script>
+</html>
