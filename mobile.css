@@ -60,7 +60,13 @@
         transform: translate(-20%, 10%);
         z-index:1;
 
-        text-shadow:  1px 1px 2px black;
+    }
+
+    .card1 .imgnum{
+        letter-spacing: .7vw;
+        transform:translateY(3.5vw);
+        font-size: 4.5vw;
+        font-weight: 600;
     }
 
     .card1 .cardpic{
@@ -75,8 +81,8 @@
         border-radius:50%;
     }
     .cardpic .span2{
-        width: 6vw;
-        height: 6vw;
+        width: 3.2vw;
+        height: 3.2vw;
         border:solid white 1px;
         border-radius:50%;
     }
@@ -85,13 +91,20 @@
         display:flex;
         flex-direction:column;
         justify-content: space-between;
-        margin:2vw;
+        margin:4vw;
         width: 100%;
+        
     }
 
     .card1 ul .c1name{
         display:flex;
         justify-content: space-between;
+    }
+
+    .c1name p{
+        font-size: 2.6vw;
+        text-transform: uppercase;
+
     }
 
             /*END CARD 1 */
@@ -105,10 +118,9 @@
     }
 
     .card2 div{
-        color:white;
-        text-shadow: 1px 1px 2px black ;
+        color:var(--branco);
         display:flex;
-        transform: translate(50vw, 15vw);
+        transform: translate(52vw, 16.5vw);
     }
 
             /*END CARD 2*/
@@ -156,7 +168,7 @@
         width: 43vw;
     }
 
-    button{
+    .info button{
         width: 89vw;
         height: 10vw;
         background-color: var(--Very_dark_violet);
@@ -182,8 +194,44 @@
     .confirmed{
         border:solid green 2px;
         display:none;
+        justify-content: center;
     }
 
+    .confirmed section{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        gap: 10vw;
+    }
+
+    .confirmed section svg{
+        height: 23vw;
+    }
+
+    .confirmed section h1{
+        font-size: 8vw;
+        font-weight: 500;
+        color:var(--Very_dark_violet);
+        letter-spacing: 1.3vw;
+    }
+
+    .confirmed section p{
+        color:var(--Dark_violet);
+        letter-spacing: .3vw;
+        font-size:4.5vw;
+        transform:translateY(-4vw);
+    }
+
+    .confirmed section button{
+        width: 85vw;
+        height: 14vw;
+        background-color: var(--Very_dark_violet);
+        color:var(--Light_violet);
+        border:none;
+        border-radius: .5rem;
+        letter-spacing: .1vw;
+    }
             /*END CONFIRMED*/
 
 
