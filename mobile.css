@@ -192,7 +192,6 @@
             /*CONFIRMED*/
 
     .confirmed{
-        border:solid green 2px;
         display:none;
         justify-content: center;
     }
